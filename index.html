@@ -27,7 +27,7 @@ body {
   justify-content: flex-end;
 }
 
-.container div {
+.container > div {
   min-height: 100%;
   text-align: left;
   border-right: 1px solid lightgray;
@@ -74,10 +74,29 @@ p {
   margin-top: 1.2em;
 }
 
-p.otherdoctor {
+.otherdoctor {
+  text-align: left;
   padding: 1em;
+  padding-bottom: 0.5em;
   max-width: 71ex;
   border: 1px solid lightgray;
+}
+
+.otherdoctor dl {
+  margin: 0;
+}
+
+.otherdoctor dt {
+  margin-right: 0.8ex;
+  display: block;
+  min-width: 13em;
+  float: left;
+}
+
+.otherdoctor dd {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: 8em;
 }
 
 .lastname {
@@ -104,14 +123,22 @@ p.otherdoctor {
 
         <p>Betreffend den Zeitpunkt des Beginns der Ordinationstätigkeit von Dr. <span class="lastname">Nachname</span> ist die Gemeinde Horitschon, Gemeindamt und Bürgermeister, der Ansprechpartner für Informationen. Bis dahin haben <em>alle</em> Ärzte in den umliegenden Gemeinden Vertretung. Namentlich sind das (in alphabetischer Reihenfolge):</p>
 
-        <p class="otherdoctor">
-          Dr. Hans Christian <span class="lastname">Filz</span> – Deutschkreutz<br/>
-          Dr. Wolfgang <span class="lastname">Fuchs</span> – Großwarasdorf<br/>
-          Dr. Michael <span class="lastname">Heinrich</span> – Deutschkreutz<br/>
-          Dr. Gerhard <span class="lastname">Prior</span> – Nikitsch<br/>
-          Dr. Ulf <span class="lastname">Schlaffer</span> – Neckenmarkt<br/>
-          Dr. Gerald <span class="lastname">Wiedemann</span> – Lackenbach
-        </p>
+        <div class="otherdoctor">
+          <dl>
+            <dt class="doctor">Dr. Hans Christian <span class="lastname">Filz</span></dt>
+            <dd class="location">–&nbsp;Deutschkreutz</dd>
+            <dt class="doctor">Dr. Wolfgang <span class="lastname">Fuchs</span></dt>
+            <dd class="location">–&nbsp;Großwarasdorf</dd>
+            <dt class="doctor">Dr. Michael <span class="lastname">Heinrich</span></dt>
+            <dd class="location">–&nbsp;Deutschkreutz</dd>
+            <dt class="doctor">Dr. Gerhard <span class="lastname">Prior</span></dt>
+            <dd class="location">–&nbsp;Nikitsch</dd>
+            <dt class="doctor">Dr. Ulf <span class="lastname">Schlaffer</span></dt>
+            <dd class="location">–&nbsp;Neckenmarkt</dd>
+            <dt class="doctor">Dr. Gerald <span class="lastname">Wiedemann</span></dt>
+            <dd class="location">–&nbsp;Lackenbach</dd>
+          </dl>
+        </div>
 
         <p>Ich möchte mich bei allen Patienten bedanken, die mir in meiner Arbeit das Vertrauen geschenkt haben.</p>
 
