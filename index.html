@@ -108,8 +108,17 @@ p {
   font-size: 1.7em;
   font-family: cursive;
   font-style: italic;
-  margin-bottom: 2em;
+  margin-bottom: 0;
   margin-top: 1em;
+}
+
+.email {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.email a {
+  color: #07a4a1;
 }
     </style>
   </head>
@@ -147,7 +156,15 @@ p {
 
         <p>Und besonders bedanken möchte ich mich bei meinen Arztkollegen – für die immer kollegiale, ehrliche und freundschaftliche Zusammenarbeit, ohne die wir alle diese  oft belastende Arbeit an und für unsere Patienten nicht in der so guten Weise machen könnten. Gerade diese entstandene Freundschaft untereinander ist bei weitem nicht selbstverständlich.</p>
 
-        <p class="signature">Dr. Gerhard Petsovits<p>
+        <p class="signature">Dr. Gerhard Petsovits</p>
+        <p id="email" class="email"></p>
+        <script type = "text/javascript">
+          // Split email into strings as poor man's email address collection protection.
+          // Won't protect against bots actually running the JavaScript, but should protect from
+          // naive regexes.
+          var inner = 'so@gmx.at">gpe';
+          document.getElementById("email").innerHTML = '<a href="mailto:gpet' + inner + 'tso@gmx.at</a>';
+        </script>
       </div>
       <div class="column-left">
         <img class="logo" src="logo.png">
