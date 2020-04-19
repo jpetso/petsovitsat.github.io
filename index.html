@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <title>Danke und auf Wiedersehen | Ordination Dr. Gerhard Petsovits</title>
+    <title>Führerscheinuntersuchung | Dr. Christa Petsovits</title>
     <style>
 body {
   margin: 0;
-  background-color: #fefefe;
+  background-color: #f5e5e2;
   color: #111111;
   font-family: sans-serif;
 }
@@ -19,9 +19,9 @@ body {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
-  -ms-flex-wrap: wrap;         /* TWEENER - IE 10 */
-  -webkit-flex-wrap: wrap;          /* NEW - Chrome */
-  flex-wrap: wrap;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -ms-flex-wrap: wrap-reverse;         /* TWEENER - IE 10 */
+  -webkit-flex-wrap: wrap-reverse;          /* NEW - Chrome */
+  flex-wrap: wrap-reverse;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
   margin: 0px -1px;
 
@@ -35,23 +35,40 @@ body {
 }
 
 .column-left {
-  width: 26rem;
-  background: linear-gradient(to left, #f5f5f5 0px, #fefefe 20%, #fefefe);
+  -webkit-flex: 1 0 26rem;          /* Chrome */
+  -ms-flex: 1 0 26rem;              /* IE 10 */
+  flex: 1 0 26rem;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  text-align: right;
+  background: linear-gradient(to left, #ebdcd9 0px, #f5e5e2 20%, #f5e5e2);
 }
 
-.logo {
-  vertical-align: right;
+.column-left p {
+  font-size: 115%;
+  text-align: right;
   width: 70%;
-  max-width: 60vw;
-  margin-left: 22%;
-  margin-right: 8%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 2rem;
 }
 
+.logo {
+  width: 100%;
+  max-width: 60vw;
+  max-height: 80vh;
+  margin-top: 0.7em;
+  object-fit: contain;
+  object-position: right top;
+}
+
 .column-center {
-  -webkit-flex: 1;          /* Chrome */
-  -ms-flex: 1;              /* IE 10 */
-  flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex: 100000;          /* Chrome */
+  -ms-flex: 100000;              /* IE 10 */
+  flex: 100000;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-flex-basis: max-content;          /* Chrome */
+  -ms-flex-basis: max-content;              /* IE 10 */
+  flex-basis: max-content;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
   -ms-flex-order: 1;         /* TWEENER - IE 10 */
   -webkit-order: 1;          /* NEW - Chrome */
@@ -59,49 +76,38 @@ body {
 
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
 
   background: linear-gradient(to left, #f5f5f5 0px, #fefefe 20%, #fefefe);
 }
 
 h1 {
   margin-top: 2rem;
-  color: #07a4a1;
+  color: #b9000d;
+}
+
+h2 {
+  font-size: 120%;
+  margin-top: 1.5em;
+  color: #540005;
 }
 
 p {
   max-width: 75ex;
   text-align: justify;
   line-height: 1.6em;
-  margin-top: 1.2em;
+  margin-top: 0.8em;
+  margin-bottom: 1.2em;
 }
 
-.otherdoctor {
-  text-align: left;
-  padding: 1em;
-  padding-bottom: 0.5em;
-  max-width: 71ex;
-  border: 1px solid lightgray;
+ul {
+  margin-bottom: 0.9em;
 }
 
-.otherdoctor dl {
-  margin: 0;
-}
-
-.otherdoctor dt {
-  margin-right: 0.8ex;
-  display: block;
-  min-width: 13em;
-  float: left;
-}
-
-.otherdoctor dd {
-  display: block;
-  margin-bottom: 0.5em;
-  margin-left: 8em;
-}
-
-.lastname {
-  text-transform: uppercase;
+li {
+  max-width: 70ex;
+  line-height: 1.5em;
+  margin-top: 0.4em;
 }
 
 .signature {
@@ -125,38 +131,35 @@ p {
   <body>
     <div class="container">
       <div class="column-center">
-        <h1>Danke und auf Wiedersehen</h1>
+        <h1>Führerscheinuntersuchung</h1>
 
-        <p>Nach mehr als 30 Jahren Ordinationstätigkeit in Horitschon wird die Ordination Dr. Gerhard Petsovits mit Ende des Jahres schließen. Durch die Wochenend- und Feiertagsregelung in diesem Jahr fällt unser letzter Ordinationstag auf Freitag, den 21.12.2018.</p>
+        <p>Dr.&nbsp;Christa Petsovits führt ab Mai 2020 Führerscheinuntersuchungen durch. Die Untersuchungen finden in der Ordination von Dr.&nbsp;Dinhopel, Horitschon, Schulgasse&nbsp;19 statt.</p>
 
-        <p>Nach Beendigung unserer Ordinationstätigkeit wird die Kassenvertragsstelle neu ausgeschrieben werden. Ansprechpartner für Informationen diesbezüglich ist die Gemeinde Horitschon, Gemeindamt und Bürgermeister.</p>
+        <p>Telefonische Terminvereinbarung unter 0664&#8239;/&#8239;3152911 wird erbeten.</p>
 
-        <p>Bis dahin haben <em>alle</em> Ärzte in den umliegenden Gemeinden Vertretung. Namentlich sind das (in alphabetischer Reihenfolge):</p>
+        <h2>Allgemeines</h2>
 
-        <div class="otherdoctor">
-          <dl>
-            <dt class="doctor">Dr. Hans Christian <span class="lastname">Filz</span></dt>
-            <dd class="location">–&nbsp;Deutschkreutz</dd>
-            <dt class="doctor">Dr. Wolfgang <span class="lastname">Fuchs</span></dt>
-            <dd class="location">–&nbsp;Großwarasdorf</dd>
-            <dt class="doctor">Dr. Michael <span class="lastname">Heinrich</span></dt>
-            <dd class="location">–&nbsp;Deutschkreutz</dd>
-            <dt class="doctor">Dr. Gerhard <span class="lastname">Prior</span></dt>
-            <dd class="location">–&nbsp;Nikitsch</dd>
-            <dt class="doctor">Dr. Ulf <span class="lastname">Schlaffer</span></dt>
-            <dd class="location">–&nbsp;Neckenmarkt</dd>
-            <dt class="doctor">Dr. Gerald <span class="lastname">Wiedemann</span></dt>
-            <dd class="location">–&nbsp;Lackenbach</dd>
-          </dl>
-        </div>
+        <p>Das ärztliche Gutachten für die Führerscheinuntersuchung wird durch Ärztinnen/Ärzte, die dazu berechtigt sind, durchgeführt. Die gesetzliche Regelung ist im FSG §&#8239;8 zu finden.</p>
 
-        <p>Ich möchte mich bei allen Patienten bedanken, die mir in meiner Arbeit das Vertrauen geschenkt haben.</p>
+        <h2>Kosten</h2>
 
-        <p>Ebenso danken möchte ich der Gemeinde Horitschon, die mich in organisatorischen Bereichen und mit der Bereitstellung der Ordinationsräumlichkeiten im Sinne einer bestmöglichen Versorgung der Bevölkerung sehr unterstützt hat.</p>
+        <ul>
+          <li>35 Euro für die Klassen A, B, B+E und F
+          <li>50 Euro für die Klassen C, D, C+E, D+E sowie die Unterklassen C1 und C1+E
+          <li>30 Euro für die Wiederholungsuntersuchung (Verlängerung) für die Klassen C und D
+        </ul>
+        <p>
+          Man kann einen <u>berechtigten Arzt</u> österreichweit für die Führerscheinuntersuchung frei wählen.
+        </p>
 
-        <p>Und besonders bedanken möchte ich mich bei meinen Arztkollegen – für die immer kollegiale, ehrliche und freundschaftliche Zusammenarbeit, ohne die wir alle diese  oft belastende Arbeit an und für unsere Patienten nicht in der so guten Weise machen könnten. Gerade diese entstandene Freundschaft untereinander ist bei weitem nicht selbstverständlich.</p>
+        <h2>Was wird benötigt?</h2>
 
-        <p class="signature">Dr. Gerhard Petsovits</p>
+        <ul>
+          <li><u>Einen gültigen amtlichen Lichtbildausweis</u> (Reisepass, Personalausweis, Führerschein)
+          <li>Brillenträger: <u>Brillenglasbestimmung</u> (Brillenpass) eines Optikers oder ein Attest des Augenarztes
+        </ul>
+
+        <!-- <p class="signature">Dr. Christa Petsovits</p>
         <p id="email" class="email"></p>
         <script type = "text/javascript">
           // Split email into strings as poor man's email address collection protection.
@@ -164,10 +167,16 @@ p {
           // naive regexes.
           var inner = 'so@gmx.at">gpe';
           document.getElementById("email").innerHTML = '<a href="mailto:gpet' + inner + 'tso@gmx.at</a>';
-        </script>
+        </script> -->
       </div>
       <div class="column-left">
-        <img class="logo" src="logo.png">
+        <p><img class="logo" src="logo.png"></p>
+        <p>
+          Dr. Christa Petsovits<br>
+          7312 Horitschon<br>
+          Schulgasse 19<br>
+          Tel. 0664&#8239;/&#8239;3152911
+        </p>
       </div>
     </div>
   </body>
